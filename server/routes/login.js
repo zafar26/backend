@@ -1,5 +1,6 @@
 const passwordHash = require('password-hash');
 const poll = require('../db')
+const pattern =require('../utils/data')
 
 module.exports = function login(req, res, next) {
 
