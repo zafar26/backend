@@ -31,7 +31,7 @@ module.exports = function signup(req, res, next) {
     poll.query('INSERT INTO users SET ? ', fields, (err, rows, fields) => {
         if (!err) {
             if (rows.affectedRows != 0)
-                res.send({ message: "Added User" })
+                res.send({ message: "User Added" })
             else
                 res.send({ message: "Internal Server" })
         } else {
